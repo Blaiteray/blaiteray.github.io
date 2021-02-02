@@ -1,47 +1,66 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-size: 10px;
   box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 html body {
   height: 100vh;
 }
-
 main {
-  height: 100%;
-  /*background: linear-gradient(to bottom right, #7f7a73, #7f7c70);*/
+  height: 200vh;
+  background: linear-gradient(to top, rgb(70, 70, 10), rgb(70, 70, 130));
+}
+.topbar {
+  height: 14vh;
+  width: 100%;
+  position: absolute;
   display: flex;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: -webkit-flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgb(10, 10, 12), rgb(70, 70, 130));
+  box-shadow: 0px 0px 40px rgb(70, 70, 130);
 }
-main img {
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
+.logo {
+  height: 100%;
+  width: 20rem;
 }
-.layer {
+/*exp*/
+#logo-name {
+  font-size: 3rem;
+  padding: 0.5rem;
+  margin-left: 1.5rem;
+}
+/*end exp*/
+.buttons {
+  height: 100%;
+  width: 42rem;
+  display: flex;
+  padding: 0.5rem;
+  position: relative;
+}
+#button1,
+#button2,
+#button3 {
+  height: 70%;
+  width: 12rem;
+  background: transparent;
   position: absolute;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2rem);
-  z-index: 2;
+  font-size: 1.5rem;
 }
-.parent {
-  height: 84vh;
-  width: 120vh;
-  position: absolute;
-  z-index: 3;
-  background: linear-gradient(
-    to right,
-    rgba(200, 210, 200, 0.35),
-    rgba(200, 210, 200, 0.3)
-  );
-  backdrop-filter: blur(3rem);
-  border-radius: 3%;
+#button2 {
+  left: 14.5rem;
+}
+#button3 {
+  left: 29rem;
+}
+#button1:hover,
+#button2:hover,
+#button3:hover {
+  height: 80%;
+  width: 12.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
