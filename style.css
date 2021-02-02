@@ -10,5 +10,38 @@ html body {
 
 main {
   height: 100%;
-  background: linear-gradient(to bottom right, gray, black);
+  /*background: linear-gradient(to bottom right, #7f7a73, #7f7c70);*/
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+main img {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.layer {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2rem);
+  z-index: 2;
+}
+.parent {
+  height: 84vh;
+  width: 120vh;
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient(
+    to right,
+    rgba(200, 210, 200, 0.35),
+    rgba(200, 210, 200, 0.3)
+  );
+  backdrop-filter: blur(3rem);
+  border-radius: 3%;
 }
