@@ -37,31 +37,29 @@ main {
 /*end exp*/
 .buttons {
   height: 100%;
-  width: 42rem;
+  width: 50%;
+  min-width: 300px;
   display: flex;
   padding: 0.5rem;
-  position: relative;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 75%;
+  }
 }
 #button1,
 #button2,
 #button3 {
-  height: 70%;
-  width: 12rem;
+  height: 90%;
+  width: 30%;
   background: transparent;
-  position: absolute;
   font-size: 1.5rem;
-}
-#button2 {
-  left: 14.5rem;
-}
-#button3 {
-  left: 29rem;
 }
 #button1:hover,
 #button2:hover,
 #button3:hover {
-  height: 80%;
-  width: 12.5rem;
+  height: 100%;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
 }
