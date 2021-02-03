@@ -9,7 +9,7 @@ html body {
   height: 100vh;
 }
 main {
-  height: 200vh;
+  height: 100vh;
   background: linear-gradient(to top, rgb(70, 70, 10), rgb(70, 70, 130));
 }
 .topbar {
@@ -37,17 +37,14 @@ main {
 /*end exp*/
 .buttons {
   height: 100%;
+  max-height: 5.5rem;
   width: 50%;
   min-width: 300px;
   display: flex;
   padding: 0.5rem;
   justify-content: space-between;
 }
-@media screen and (max-width: 500px) {
-  html {
-    font-size: 75%;
-  }
-}
+
 #button1,
 #button2,
 #button3 {
@@ -62,4 +59,13 @@ main {
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+  .topbar {
+    justify-content: space-around;
+  }
 }
