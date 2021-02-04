@@ -10,54 +10,59 @@ html body {
 }
 main {
   height: 100vh;
-  background: linear-gradient(to top, rgb(70, 70, 10), rgb(70, 70, 130));
+  background: linear-gradient(to top, rgb(30, 30, 6), rgb(30, 30, 70));
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .topbar {
   height: 14vh;
   width: 100%;
-  position: absolute;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: linear-gradient(to bottom, rgb(10, 10, 12), rgb(70, 70, 130));
-  box-shadow: 0px 0px 40px rgb(70, 70, 130);
+  background: linear-gradient(
+    to bottom right,
+    rgb(20, 20, 24),
+    rgb(10, 10, 14)
+  );
+  box-shadow: 0px 2px 6px rgb(10, 10, 14);
 }
 .middle-section {
   height: 50vh;
   width: 100%;
-  position: absolute;
-  top: 30vh;
   display: flex;
-  flex-direction: column;
   display: -webkit-flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
 }
 .footer {
   height: 8vh;
   width: 100%;
-  position: absolute;
-  bottom: 0px;
-  background: rgba(10, 10, 15, 0.1);
+  background: rgba(10, 10, 15, 0.3);
   display: flex;
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px -3px 3px rgba(10, 10, 15, 0.15);
+  box-shadow: 0px -3px 3px rgba(10, 10, 15, 0.8);
 }
 .logo {
   height: 100%;
   width: 20rem;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
 }
 /*exp*/
 #logo-name {
   font-size: 3rem;
-  padding: 0.5rem;
-  margin-left: 1.5rem;
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 3px 3px 3px gray;
 }
 #copy {
   color: aliceblue;
@@ -86,8 +91,7 @@ main {
   background: transparent;
   font-size: 1.5rem;
   text-shadow: 3px 3px 6px black;
-  box-shadow: 2px 2px 6px rgba(10, 10, 15, 0.8),
-    -1px -1px 3px rgba(10, 10, 15, 0.8);
+  box-shadow: 2px 2px 6px darkgray, -1px -1px 3px gray;
   border: none;
 }
 #button1:hover,
@@ -107,5 +111,17 @@ main {
   }
   #poem {
     font-size: 1rem;
+  }
+  .buttons {
+    width: 100vw;
+    min-width: 360px;
+    background: linear-gradient(
+      to bottom right,
+      rgb(20, 20, 24),
+      rgb(10, 10, 14)
+    );
+    box-shadow: 0px 2px 6px rgb(10, 10, 14);
+    justify-content: space-around;
+  }
   }
 }
