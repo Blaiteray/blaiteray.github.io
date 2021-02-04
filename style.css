@@ -72,7 +72,7 @@ main {
   height: 100%;
   max-height: 5.5rem;
   width: 50%;
-  min-width: 300px;
+  min-width: 330px;
   display: flex;
   padding: 0.5rem;
   justify-content: space-between;
@@ -98,7 +98,7 @@ main {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   html {
     font-size: 75%;
   }
