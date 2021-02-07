@@ -3,14 +3,15 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  color: white;
 }
 html body {
   height: 100vh;
 }
 main {
   height: 100vh;
-  background: linear-gradient(to top, rgb(30, 30, 6), rgb(30, 30, 70));
+  min-height: 320px;
+  /*background: linear-gradient(to top, rgb(30, 30, 6), rgb(30, 30, 70));*/
+  background: bisque;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -18,7 +19,8 @@ main {
   align-items: center;
 }
 .topbar {
-  height: 14vh;
+  height: 11vh;
+  min-height: 58px;
   width: 100%;
   display: flex;
   display: -webkit-flex;
@@ -30,7 +32,7 @@ main {
     rgb(20, 20, 24),
     rgb(10, 10, 14)
   );
-  box-shadow: 0px 2px 6px rgb(10, 10, 14);
+  box-shadow: 0px 1px 2px gray;
 }
 .middle-section {
   height: 50vh;
@@ -42,14 +44,14 @@ main {
   align-items: center;
 }
 .footer {
-  height: 8vh;
+  height: 7vh;
   width: 100%;
-  background: rgba(10, 10, 15, 0.3);
+  background: linear-gradient(to top right, rgb(20, 20, 24), rgb(10, 10, 14));
+  box-shadow: 0px -1px 2px gray;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px -3px 3px rgba(10, 10, 15, 0.8);
 }
 .logo {
   height: 100%;
@@ -61,16 +63,21 @@ main {
 }
 /*exp*/
 #logo-name {
-  font-size: 3rem;
-  text-shadow: 3px 3px 3px gray;
+  font-size: 2.6rem;
+  text-shadow: 1px 1px 4px gray;
+  color: bisque;
 }
 #copy {
-  color: aliceblue;
-  text-shadow: 0px 0px 6px black;
+  color: bisque;
+  text-shadow: 0px 0px 6px gray;
 }
 #internal-heading {
   margin: 1rem;
   margin-bottom: 2rem;
+  color: rgb(10, 10, 14);
+}
+#poem {
+  color: rgb(10, 10, 14);
 }
 /*end exp*/
 .buttons {
@@ -79,20 +86,21 @@ main {
   width: 50%;
   min-width: 330px;
   display: flex;
-  padding: 0.5rem;
+  padding: 0.8em;
   justify-content: space-between;
 }
 
 #button1,
 #button2,
 #button3 {
-  height: 90%;
+  height: 96%;
   width: 30%;
   background: transparent;
   font-size: 1.5rem;
-  text-shadow: 3px 3px 6px black;
-  box-shadow: 2px 2px 6px darkgray, -1px -1px 3px gray;
+  text-shadow: 0px 0px 6px gray;
+  box-shadow: 1px 1px 2px darkgray, -0px -0px 2px gray;
   border: none;
+  color: bisque;
 }
 #button1:hover,
 #button2:hover,
@@ -108,9 +116,6 @@ main {
   }
   .topbar {
     justify-content: space-around;
-  }
-  #poem {
-    font-size: 1rem;
   }
   .buttons {
     width: 100vw;
