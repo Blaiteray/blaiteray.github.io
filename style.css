@@ -4,12 +4,20 @@
   box-sizing: border-box;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
+::selection {
+  color: bisque;
+  background: rgb(107, 107, 127);
+}
+::-moz-selection {
+  color: bisque;
+  background: rgb(107, 107, 127);
+}
 html body {
   height: 100vh;
 }
 main {
   height: 100vh;
-  min-height: 320px;
+  min-height: 450px;
   /*background: linear-gradient(to top, rgb(30, 30, 6), rgb(30, 30, 70));*/
   background: bisque;
   display: flex;
@@ -33,25 +41,32 @@ main {
     rgb(10, 10, 14)
   );
   box-shadow: 0px 1px 2px gray;
+  z-index: 2;
 }
 .middle-section {
   height: 50vh;
-  width: 100%;
+  width: 70vw;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .footer {
   height: 7vh;
   width: 100%;
-  background: linear-gradient(to top right, rgb(20, 20, 24), rgb(10, 10, 14));
+  background: linear-gradient(
+    to top right,
+    rgba(20, 20, 24, 0.2),
+    rgba(10, 10, 14, 0.2)
+  );
   box-shadow: 0px -1px 2px gray;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .logo {
   height: 100%;
@@ -62,13 +77,29 @@ main {
   justify-content: center;
 }
 /*exp*/
+#top-icon {
+  width: 30rem;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: -100px;
+  opacity: 0.5;
+}
+#bottom-circle {
+  width: 16rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 10vh;
+  right: 6vw;
+  opacity: 0.3;
+}
 #logo-name {
   font-size: 2.6rem;
   text-shadow: 1px 1px 4px gray;
   color: bisque;
 }
 #copy {
-  color: bisque;
+  color: rgb(10, 10, 14);
   text-shadow: 0px 0px 6px gray;
 }
 #internal-heading {
@@ -120,6 +151,7 @@ main {
   .buttons {
     width: 100vw;
     min-width: 300px;
+    max-height: 5rem;
     background: linear-gradient(
       to bottom right,
       rgb(20, 20, 24),
@@ -127,5 +159,9 @@ main {
     );
     box-shadow: 0px 2px 6px rgb(10, 10, 14);
     justify-content: space-around;
+  }
+  #top-icon {
+    top: 11vh;
+    left: -80px;
   }
 }
