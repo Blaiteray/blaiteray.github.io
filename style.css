@@ -78,7 +78,6 @@ main {
   align-items: center;
   justify-content: center;
 }
-/*exp*/
 #top-icon {
   width: 30rem;
   position: absolute;
@@ -105,17 +104,6 @@ main {
   text-shadow: 0px 0px 6px gray;
   text-align: center;
 }
-#internal-heading {
-  font-size: 2.2rem;
-  margin: 1rem;
-  margin-bottom: 2rem;
-  color: rgb(10, 10, 14);
-}
-#diescription {
-  color: rgb(10, 10, 14);
-  font-size: 1.2rem;
-}
-/*end exp*/
 .buttons {
   height: 100%;
   max-height: 5.5rem;
@@ -145,35 +133,4 @@ main {
   height: 100%;
   background: rgba(200, 200, 220, 0.1);
   cursor: pointer;
-}
-
-@media screen and (max-width: 720px) {
-  html {
-    font-size: 75%;
-  }
-  .topbar {
-    justify-content: space-around;
-  }
-  .buttons {
-    width: 100vw;
-    min-width: 300px;
-    max-height: 5rem;
-    background: linear-gradient(
-      to bottom right,
-      rgb(20, 20, 24),
-      rgb(10, 10, 14)
-    );
-    box-shadow: 0px 2px 6px rgb(10, 10, 14);
-    justify-content: space-around;
-  }
-  #top-icon {
-    top: 11vh;
-    left: -80px;
-  }
-  #internal-heading {
-    font-size: 2.7rem;
-  }
-  #diescription {
-    font-size: 1.5rem;
-  }
 }
