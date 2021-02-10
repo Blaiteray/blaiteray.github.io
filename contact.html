@@ -17,24 +17,50 @@
     <!-- Page css down -->
     <link rel="stylesheet" href="./style/style_mobile.css" />
     <link rel="icon" href="./img/icon.svg" />
-    <title>Blaiteray &bull; Soumitra Dx</title>
+    <title>Blaiteray</title>
   </head>
   <body>
     <main>
       <div class="topbar">
         <div class="logo">
-          <h1 id="logo-name">Soumitra Dx</h1>
+          <h1 id="logo-name">Blaiteray</h1>
         </div>
         <div class="buttons">
-          <button id="button1" onclick="location.href='./index.html'">
-            Home
-          </button>
-          <button id="button2" onclick="location.href='./img/imback.jpg'">
-            Contact
-          </button>
-          <button id="button3" onclick="location.href='./img/imback.jpg'">
-            Projects
-          </button>
+          <div class="menu">
+            <button id="button1" onclick="location.href='./index.html'">
+              Home
+            </button>
+          </div>
+          <div class="menu">
+            <button id="button2" onclick="location.href='./contact.html'">
+              Contact
+            </button>
+          </div>
+          <div class="project-dropdown">
+            <button id="button3">Projects</button>
+            <div class="project-list">
+              <!-- Add projects down-->
+              <button
+                class="project-name"
+                onclick="location.href='./img/circle.svg'"
+              >
+                Project_Name_01
+              </button>
+              <button
+                class="project-name"
+                onclick="location.href='./img/icon.svg'"
+              >
+                Project_Name_02
+              </button>
+              <button
+                class="project-name"
+                onclick="location.href='./img/imback.jpg'"
+              >
+                All
+              </button>
+              <!-- Add projects up-->
+            </div>
+          </div>
         </div>
       </div>
       <div class="middle-section">
@@ -50,11 +76,11 @@
         </p>
       </div>
       <div class="footer">
-        <p id="copy">&copy;2021, Created by Soumitra Dx</p>
+        <p id="copy">&copy;Copyright 2021 Soumitra Dx</p>
       </div>
     </main>
-    <img id="top-icon" src="./img/icon.svg" />
-    <img id="bottom-circle" src="./img/circle.svg" />
+    <img id="top-icon" src="./img/icon.svg" alt="" />
+    <div id="bottom-circle"></div>
     <script src="./app.js"></script>
   </body>
 </html>
