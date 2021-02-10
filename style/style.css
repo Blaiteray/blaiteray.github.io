@@ -99,9 +99,11 @@ main {
   opacity: 0.3;
 }
 #logo-name {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   text-shadow: 1px 1px 4px gray;
   color: bisque;
+  position: relative;
+  right: 1rem;
 }
 #copy {
   color: rgb(10, 10, 14);
