@@ -87,11 +87,15 @@ main {
   opacity: 0.4;
 }
 #bottom-circle {
-  width: 16rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  background: bisque;
+  box-shadow: 0.08rem 0.08rem 0 0.16rem rgb(10, 10, 14);
   position: absolute;
+  bottom: 15vh;
+  right: 8vw;
   z-index: 1;
-  bottom: 10vh;
-  right: 6vw;
   opacity: 0.3;
 }
 #logo-name {
