@@ -25,11 +25,17 @@
     left: 0px;
   }
   /*---------------------Home----------------------*/
-  #internal-heading {
-    font-size: 2.7rem;
+  .about-me {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
   }
-  #diescription {
-    font-size: 1.5rem;
+  #home-heading {
+    font-size: 2.4rem;
+  }
+  #description {
+    font-size: 1.4rem;
   }
   /*---------------------Home----------------------*/
 }

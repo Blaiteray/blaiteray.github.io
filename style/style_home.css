@@ -1,10 +1,31 @@
-#internal-heading {
+.middle-section {
+  width: 80vw;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.me {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+.about-me {
+  width: 50vw;
+  min-width: 260px;
+  font-size: 1.2rem;
+}
+#my-photo {
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+}
+#home-heading {
   font-size: 2.2rem;
   margin: 1rem;
-  margin-bottom: 2rem;
-  color: rgb(10, 10, 14);
 }
-#diescription {
-  color: rgb(10, 10, 14);
-  font-size: 1.2rem;
+#description {
+  font-size: 1.1rem;
 }
