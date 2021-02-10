@@ -143,10 +143,6 @@ main {
   background: rgba(200, 200, 220, 0.1);
   cursor: pointer;
 }
-*#button3:hover,
-#button3:focus {
-  background: transparent;
-}
 .project-name {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
