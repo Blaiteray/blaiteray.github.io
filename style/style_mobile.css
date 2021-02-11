@@ -2,11 +2,9 @@
   html {
     font-size: 75%;
   }
-  html body {
-    height: auto;
-  }
   main {
     height: auto;
+    min-height: 100vh;
   }
   .topbar {
     min-height: 80px;
