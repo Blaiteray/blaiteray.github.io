@@ -5,7 +5,6 @@
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 .me {
   height: 15rem;

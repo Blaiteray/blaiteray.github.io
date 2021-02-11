@@ -30,17 +30,16 @@ main {
 }
 .topbar {
   height: 11vh;
-  min-height: 58px;
+  min-height: 60px;
   width: 100%;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   background: linear-gradient(
     to bottom right,
-    rgb(20, 20, 24),
-    rgb(10, 10, 14)
+    rgb(24, 20, 20),
+    rgb(14, 10, 10)
   );
   box-shadow: 0px 1px 2px gray;
   z-index: 3;
@@ -48,6 +47,7 @@ main {
 .middle-section {
   height: 50vh;
   width: 70vw;
+  padding: 1rem 0rem 1rem 0rem;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -60,8 +60,8 @@ main {
   width: 100%;
   background: linear-gradient(
     to top right,
-    rgba(20, 20, 24, 0.2),
-    rgba(10, 10, 14, 0.2)
+    rgba(24, 20, 20, 0.4),
+    rgba(14, 10, 10, 0.4)
   );
   box-shadow: 0px -1px 2px gray;
   display: flex;
@@ -80,6 +80,7 @@ main {
 }
 #top-icon {
   width: 30rem;
+  max-height: 100vh;
   position: absolute;
   z-index: 1;
   top: 0px;
@@ -91,7 +92,7 @@ main {
   height: 12.5rem;
   border-radius: 50%;
   background: bisque;
-  box-shadow: 0.08rem 0.08rem 0 0.16rem rgb(10, 10, 14);
+  box-shadow: 0.08rem 0.08rem 0 0.16rem rgb(14, 10, 10);
   position: absolute;
   bottom: 15vh;
   right: 8vw;
@@ -106,7 +107,7 @@ main {
   right: 1rem;
 }
 #copy {
-  color: rgb(10, 10, 14);
+  color: rgb(14, 10, 10);
   text-shadow: 0px 0px 6px gray;
   text-align: center;
 }
@@ -114,7 +115,7 @@ main {
   height: 100%;
   max-height: 5.5rem;
   width: 50%;
-  min-width: 330px;
+  min-width: 460px;
   display: flex;
   padding: 0.8em;
   justify-content: space-between;
@@ -131,7 +132,7 @@ main {
   background: transparent;
   font-size: 1.4rem;
   text-shadow: 0px 0px 6px gray;
-  box-shadow: 1px 1px 2px darkgray, -0px -0px 2px gray;
+  box-shadow: 0.6px 0.6px 1px darkgray, 0px 0px 2px gray;
   border: none;
   color: bisque;
   border-radius: 8px;
@@ -141,6 +142,7 @@ main {
 #button3:hover {
   height: 100%;
   background: rgba(200, 200, 220, 0.1);
+  box-shadow: 1px 1px 2px darkgray, 0px 0px 2px gray;
   cursor: pointer;
 }
 .project-name {
@@ -156,11 +158,11 @@ main {
 }
 .project-name:hover {
   cursor: pointer;
-  background: rgba(200, 200, 220, 0.1);
+  background: rgba(220, 200, 200, 0.1);
 }
 .project-list {
   width: 100%;
-  background: rgb(10, 10, 14);
+  background: rgb(14, 10, 10);
   display: none;
   border-radius: 8px;
 }
