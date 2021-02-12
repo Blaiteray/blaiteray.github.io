@@ -28,6 +28,11 @@
   #logo-name {
     left: 0px;
   }
+  .project-list {
+    top: 18vh;
+    width: 80%;
+    left: 10%;
+  }
   /*---------------------Home----------------------*/
   .about-me {
     display: flex;
@@ -47,4 +52,14 @@
     flex-direction: column;
   }
   /*---------------------Home----------------------*/
+}
+@media screen and (max-height: 500px) and (max-width: 740px) {
+  .project-list {
+    top: 80px;
+  }
+}
+@media screen and (max-height: 600px) and (min-width: 741px) {
+  .project-list {
+    top: 60px;
+  }
 }

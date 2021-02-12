@@ -136,6 +136,10 @@ main {
   border: none;
   color: bisque;
   border-radius: 8px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
 }
 #button1:hover,
 #button2:hover,
@@ -144,6 +148,15 @@ main {
   background: rgba(200, 200, 220, 0.1);
   box-shadow: 1px 1px 2px darkgray, 0px 0px 2px gray;
   cursor: pointer;
+}
+.project-list {
+  width: 60%;
+  background: rgb(14, 10, 10);
+  display: none;
+  border-radius: 8px;
+  position: absolute;
+  left: 20%;
+  top: 11vh;
 }
 .project-name {
   margin-top: 0.2rem;
@@ -160,9 +173,14 @@ main {
   cursor: pointer;
   background: rgba(220, 200, 200, 0.1);
 }
-.project-list {
-  width: 100%;
-  background: rgb(14, 10, 10);
-  display: none;
-  border-radius: 8px;
+#dropdown-icon {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  pointer-events: none;
+  font-size: 0.8rem;
+  position: relative;
+  top: 0.1rem;
 }
