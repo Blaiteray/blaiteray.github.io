@@ -20,7 +20,6 @@ main {
   height: 100vh;
   min-height: 500px;
   min-width: 290px;
-  /*background: linear-gradient(to top, rgb(30, 30, 6), rgb(30, 30, 70));*/
   background: bisque;
   display: flex;
   display: -webkit-flex;
@@ -38,8 +37,8 @@ main {
   justify-content: space-between;
   background: linear-gradient(
     to bottom right,
-    rgb(24, 20, 20),
-    rgb(14, 10, 10)
+    rgb(20, 20, 24),
+    rgb(10, 10, 14)
   );
   box-shadow: 0px 1px 2px gray;
   z-index: 3;
@@ -60,10 +59,10 @@ main {
   width: 100%;
   background: linear-gradient(
     to top right,
-    rgba(24, 20, 20, 0.4),
-    rgba(14, 10, 10, 0.4)
+    rgba(20, 20, 24, 0.5),
+    rgba(10, 10, 14, 0.4)
   );
-  box-shadow: 0px -1px 2px gray;
+  box-shadow: 0px -1px 6px rgba(10, 10, 14, 0.8);
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -92,7 +91,7 @@ main {
   height: 12.5rem;
   border-radius: 50%;
   background: bisque;
-  box-shadow: 0.08rem 0.08rem 0 0.16rem rgb(14, 10, 10);
+  box-shadow: 0.08rem 0.08rem 0 0.16rem rgb(10, 10, 14);
   position: absolute;
   bottom: 15vh;
   right: 8vw;
@@ -101,13 +100,13 @@ main {
 }
 #logo-name {
   font-size: 2.8rem;
-  text-shadow: 1px 1px 4px gray;
+  text-shadow: 1px 1px 6px rgb(194, 194, 194);
   color: bisque;
   position: relative;
   right: 1rem;
 }
 #copy {
-  color: rgb(14, 10, 10);
+  color: rgb(10, 10, 14);
   text-shadow: 0px 0px 6px gray;
   text-align: center;
 }
@@ -151,7 +150,7 @@ main {
 }
 .project-list {
   width: 60%;
-  background: rgb(14, 10, 10);
+  background: rgb(10, 10, 14);
   display: none;
   border-radius: 8px;
   position: absolute;
@@ -171,7 +170,7 @@ main {
 }
 .project-name:hover {
   cursor: pointer;
-  background: rgba(220, 200, 200, 0.1);
+  background: rgba(200, 200, 220, 0.1);
 }
 #dropdown-icon {
   transform: rotate(-45deg);
