@@ -48,7 +48,7 @@
     font-size: 1.4rem;
     text-align: center;
   }
-  .middle-section {
+  #homeMid {
     flex-direction: column;
   }
   /*---------------------Contact Me----------------------*/
