@@ -305,4 +305,5 @@ main {
 }
 #submit:hover {
   background-color: rgba(10, 10, 14, 0.1);
+  cursor: pointer;
 }
