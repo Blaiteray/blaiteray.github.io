@@ -177,7 +177,7 @@ main {
   border-radius: 5px;
   backdrop-filter: blur(3px);
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
 }
 .project-name {
