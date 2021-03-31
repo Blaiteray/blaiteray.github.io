@@ -2,10 +2,6 @@
   html {
     font-size: 75%;
   }
-  main {
-    height: auto;
-    min-height: 100vh;
-  }
   .topbar {
     min-height: 80px;
     flex-direction: column;
@@ -28,10 +24,13 @@
   #logo-name {
     left: 0px;
   }
-  .project-list {
-    top: 18vh;
-    width: 80%;
-    left: 10%;
+  #project-list {
+    top: 120px;
+    height: 80%;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
   }
   /*---------------------Home----------------------*/
   .about-me {
@@ -57,12 +56,12 @@
   }
 }
 @media screen and (max-height: 500px) and (max-width: 740px) {
-  .project-list {
-    top: 80px;
+  #project-list {
+    top: 90px;
   }
 }
 @media screen and (max-height: 600px) and (min-width: 741px) {
-  .project-list {
-    top: 60px;
+  #project-list {
+    top: 65px;
   }
 }
