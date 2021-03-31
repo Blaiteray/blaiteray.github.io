@@ -76,6 +76,10 @@ main {
   display: -webkit-flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .logo:hover {
   cursor: pointer;
@@ -147,6 +151,10 @@ main {
   display: -webkit-flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 #button1:hover,
 #button2:hover,
