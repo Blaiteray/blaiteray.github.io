@@ -195,3 +195,106 @@ main {
   font-size: 1.2rem;
   text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
 }
+
+/************Home*******************/
+#homeMid {
+  width: 80vw;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.me {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px 12px rgba(10, 10, 14, 0.4);
+  filter: blur(0.2px);
+  pointer-events: none;
+}
+.about-me {
+  width: 50vw;
+  min-width: 260px;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+}
+#my-photo {
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+  text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+}
+#home-heading {
+  font-size: 2.2rem;
+  margin: 1rem;
+}
+
+/*************Contacts*****************/
+#contMid {
+  display: none;
+}
+.form {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#internal-heading {
+  font-size: 2.2rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  color: rgb(10, 10, 14);
+  text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+}
+.socialLinks {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  padding: 1rem;
+}
+.socialIcon {
+  margin: 0.6rem;
+  width: 1.8rem;
+  opacity: 0.8;
+  box-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+}
+.socialIcon:hover {
+  opacity: 0.9;
+  width: 1.9rem;
+  margin: 0.5rem;
+}
+#contactMe {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  width: 50vw;
+}
+#name {
+  margin: 0.1rem;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 0.2rem;
+  border: 0.2rem solid rgba(10, 10, 14, 0.5);
+  box-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+  font-size: 1.2rem;
+}
+#description {
+  margin: 0.1rem;
+  padding: 0.5rem 0.6rem;
+  border: 0.2rem solid rgba(10, 10, 14, 0.5);
+  box-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+  font-size: 1.2rem;
+}
+#submit {
+  font-size: 1.2rem;
+  color: rgb(10, 10, 14);
+  padding: 0.2rem;
+  margin-top: 0.5rem;
+  border: 0.2rem solid rgba(10, 10, 14, 0.5);
+  box-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+  text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
+}
+#submit:hover {
+  background-color: rgba(10, 10, 14, 0.1);
+}
