@@ -6,11 +6,11 @@
   font-size: 18px;
 }
 ::selection {
-  color: bisque;
+  color: rgb(255, 241, 233);
   background: rgb(107, 107, 127);
 }
 ::-moz-selection {
-  color: bisque;
+  color: rgb(255, 241, 233);
   background: rgb(107, 107, 127);
 }
 html body {
@@ -20,7 +20,7 @@ main {
   height: 100vh;
   min-height: 500px;
   min-width: 290px;
-  background: bisque;
+  background: rgb(255, 241, 233);
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ main {
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 50%;
-  background: bisque;
+  background: rgb(255, 241, 233);
   box-shadow: 0.08rem 0.08rem 0 0.16rem rgb(10, 10, 14);
   position: absolute;
   bottom: 15vh;
@@ -107,7 +107,7 @@ main {
 #logo-name {
   font-size: 2.8rem;
   text-shadow: 1px 1px 6px rgb(194, 194, 194);
-  color: bisque;
+  color: rgb(255, 241, 233);
   position: relative;
   right: 1rem;
 }
@@ -115,6 +115,7 @@ main {
   color: rgb(10, 10, 14);
   text-shadow: 0px 0px 6px gray;
   text-align: center;
+  font-size: 1.1rem;
   text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
 }
 .buttons {
@@ -140,7 +141,7 @@ main {
   text-shadow: 0px 0px 6px gray;
   box-shadow: 0.6px 0.6px 1px darkgray, 0px 0px 2px gray;
   border: none;
-  color: bisque;
+  color: rgb(255, 241, 233);
   border-radius: 8px;
   display: flex;
   display: -webkit-flex;
@@ -170,7 +171,7 @@ main {
   font-size: 1.4rem;
   text-shadow: 0px 0px 6px gray;
   border: none;
-  color: bisque;
+  color: rgb(255, 241, 233);
   background: transparent;
   padding: 0.3rem 0rem 0.5rem 0rem;
   z-index: 3;
