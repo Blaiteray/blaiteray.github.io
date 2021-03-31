@@ -40,7 +40,7 @@ main {
     rgb(20, 20, 24),
     rgb(10, 10, 14)
   );
-  box-shadow: 0px 1px 2px gray;
+  box-shadow: 0px 1px 4px rgba(20, 20, 24, 0.5);
   z-index: 3;
 }
 .middle-section {
@@ -62,7 +62,7 @@ main {
     rgba(20, 20, 24, 0.5),
     rgba(10, 10, 14, 0.4)
   );
-  box-shadow: 0px -1px 6px rgba(10, 10, 14, 0.8);
+  box-shadow: 0px 1px 6px rgba(10, 10, 14, 0.8);
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -77,6 +77,9 @@ main {
   align-items: center;
   justify-content: center;
 }
+.logo:hover {
+  cursor: pointer;
+}
 #top-icon {
   width: 30rem;
   max-height: 100vh;
@@ -85,6 +88,8 @@ main {
   top: 0px;
   left: -100px;
   opacity: 0.4;
+  filter: blur(4px);
+  pointer-events: none;
 }
 #bottom-circle {
   width: 12.5rem;
@@ -97,6 +102,7 @@ main {
   right: 8vw;
   z-index: 1;
   opacity: 0.3;
+  filter: blur(3px);
 }
 #logo-name {
   font-size: 2.8rem;
@@ -109,6 +115,7 @@ main {
   color: rgb(10, 10, 14);
   text-shadow: 0px 0px 6px gray;
   text-align: center;
+  text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
 }
 .buttons {
   height: 100%;
@@ -182,4 +189,8 @@ main {
   font-size: 0.8rem;
   position: relative;
   top: 0.1rem;
+}
+.normalText {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
 }

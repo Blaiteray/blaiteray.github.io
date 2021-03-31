@@ -27,20 +27,16 @@
         </div>
         <div class="buttons">
           <div class="menu">
-            <button id="button1" onclick="location.href='./index.html'">
-              Home
-            </button>
+            <div id="button1">Home</div>
           </div>
           <div class="menu">
-            <button id="button2" onclick="location.href='./contact.html'">
-              Contact
-            </button>
+            <div id="button2">Contact</div>
           </div>
           <div class="project-dropdown">
-            <button id="button3">
+            <div id="button3">
               Projects
               <div id="dropdown-icon">&nbsp;&nbsp;&#9699;</div>
-            </button>
+            </div>
             <div class="project-list">
               <!-- Add projects down-->
               <button
@@ -67,16 +63,35 @@
         </div>
       </div>
       <div class="middle-section">
-        <h2 id="internal-heading">Contact Me</h2>
-        <p id="diescription">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad maxime
-          numquam ipsam nostrum illo blanditiis, reiciendis nesciunt quasi
-          praesentium saepe sunt optio mollitia consectetur sint distinctio,
-          non, cum aliquam aliquid. Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Provident dolorem aliquam impedit mollitia dolores.
-          Voluptatem, modi suscipit quae voluptas dolores, in tenetur ex est
-          delectus quibusdam nemo inventore nobis deleniti.
-        </p>
+        <div class="form">
+          <h2 id="internal-heading">Contact Me</h2>
+          <form id="contactMe" action="">
+            <label class="normalText" for="name">Your Name</label>
+            <input type="text" / id="name">
+            <label class="normalText" for="description">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="7"
+            ></textarea>
+            <input type="submit" id="submit" />
+          </form>
+        </div>
+        <div class="socialLinks">
+          <a href="https://www.facebook.com/soumitra.dx/" target="_blank"
+            ><img class="socialIcon" src="./img/facebook.svg" alt="facebook"
+          /></a>
+          <a href="https://twitter.com/soumitradx" target="_blank"
+            ><img class="socialIcon" src="./img/twitter.svg" alt="facebook"
+          /></a>
+          <a href="https://github.com/Blaiteray" target="_blank"
+            ><img class="socialIcon" src="./img/github.svg" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/soumitradx/" target="_blank"
+            ><img class="socialIcon" src="./img/instagram.svg" alt="facebook"
+          /></a>
+        </div>
       </div>
       <div class="footer">
         <p id="copy">&copy;Copyright 2021 Soumitra Dx</p>
