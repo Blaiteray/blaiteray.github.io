@@ -58,9 +58,9 @@ main {
   height: 7vh;
   width: 100%;
   background: linear-gradient(
-    to top right,
+    to bottom,
     rgba(20, 20, 24, 0.5),
-    rgba(10, 10, 14, 0.4)
+    rgb(10, 10, 14)
   );
   box-shadow: 0px 1px 6px rgba(10, 10, 14, 0.8);
   display: flex;
@@ -91,7 +91,7 @@ main {
   z-index: 1;
   top: 0px;
   left: -100px;
-  opacity: 0.4;
+  opacity: 0.3;
   filter: blur(4px);
   pointer-events: none;
 }
@@ -116,10 +116,10 @@ main {
   right: 1rem;
 }
 #copy {
-  color: rgb(10, 10, 14);
+  color: rgb(255, 241, 233);
   text-shadow: 0px 0px 6px gray;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
 }
 .buttons {
