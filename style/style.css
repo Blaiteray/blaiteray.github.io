@@ -283,7 +283,7 @@ main {
   flex-direction: column;
   width: 50vw;
 }
-#name {
+#email {
   margin: 0.1rem;
   padding: 0.3rem 0.6rem;
   margin-bottom: 0.2rem;
@@ -291,7 +291,7 @@ main {
   box-shadow: 1px 1px 6px rgba(10, 10, 14, 0.6);
   font-size: 1.2rem;
 }
-#description {
+#message {
   margin: 0.1rem;
   padding: 0.5rem 0.6rem;
   border: 0.2rem solid rgba(10, 10, 14, 0.5);
