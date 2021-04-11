@@ -1,3 +1,6 @@
+:root {
+  --main-color: rgb(255, 241, 233);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -6,11 +9,11 @@
   font-size: 18px;
 }
 ::selection {
-  color: rgb(255, 241, 233);
+  color: var(--main-color);
   background: rgb(107, 107, 127);
 }
 ::-moz-selection {
-  color: rgb(255, 241, 233);
+  color: var(--main-color);
   background: rgb(107, 107, 127);
 }
 html body {
@@ -20,7 +23,7 @@ main {
   height: auto;
   min-height: 100vh;
   min-width: 290px;
-  background: rgb(255, 241, 233);
+  background: var(--main-color);
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
@@ -95,7 +98,7 @@ main {
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 50%;
-  background: rgb(255, 241, 233);
+  background: var(--main-color);
   box-shadow: 0.08rem 0.08rem 0 0.16rem rgb(10, 10, 14);
   position: absolute;
   bottom: 15vh;
@@ -108,12 +111,12 @@ main {
   font-family: "Merriweather", serif;
   font-size: 2rem;
   text-shadow: 1px 1px 6px rgb(194, 194, 194);
-  color: rgb(255, 241, 233);
+  color: var(--main-color);
   position: relative;
   right: 1rem;
 }
 #copy {
-  color: rgb(255, 241, 233);
+  color: var(--main-color);
   text-shadow: 0px 0px 6px gray;
   text-align: center;
   font-size: 0.8rem;
@@ -142,7 +145,7 @@ main {
   text-shadow: 0px 0px 6px gray;
   /*box-shadow: 0.6px 0.6px 1px darkgray, 0px 0px 2px gray;*/
   border: none;
-  color: rgb(255, 241, 233);
+  color: var(--main-color);
   border-radius: 8px;
   display: flex;
   display: -webkit-flex;
@@ -158,7 +161,7 @@ main {
 #button3:hover {
   height: 100%;
   /*background: linear-gradient(to bottom, transparent, rgba(255, 241, 233, 0.1));*/
-  text-shadow: 0px 0px 6px rgb(255, 241, 233);
+  text-shadow: 0px 0px 6px var(--main-color);
   cursor: pointer;
 }
 #project-list {
@@ -170,18 +173,17 @@ main {
     rgba(40, 40, 48, 0.95),
     rgba(10, 10, 14, 0.95)
   );*/
-  background: rgba(255, 241, 233, 0.9);
+  background: rgba(10, 10, 14, 0.15) /*rgba(90, 90, 89, 0.9)*/;
   display: none;
   border-radius: 8px;
   position: absolute;
   left: 8vw;
   top: 12vh;
   border-radius: 5px;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(16px);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0.8rem 1rem;
-  border: 2px solid gray;
 }
 .project-name {
   margin-top: 0.2rem;
@@ -204,8 +206,9 @@ main {
   cursor: pointer;
   background: linear-gradient(
     to top,
-    rgba(20, 20, 22, 0.04),
-    rgba(20, 20, 22, 0.08)
+    rgba(20, 20, 22, 0.2),
+    rgba(20, 20, 22, 0.1),
+    rgba(20, 20, 22, 0.2)
   );
 }
 
@@ -296,25 +299,28 @@ main {
   margin: 0.1rem;
   padding: 0.2rem 0.4rem;
   margin-bottom: 0.2rem;
-  border: 2px solid rgba(40, 40, 48, 0.8);
-  box-shadow: 1px 1px 4px rgba(10, 10, 14, 0.6);
+  border: 1.8px solid rgba(40, 40, 48, 0.8);
+  box-shadow: 1px 1px 3px rgba(10, 10, 14, 0.6);
   font-size: 1.1rem;
+  outline: none;
 }
 #message {
   margin: 0.1rem;
   padding: 0.2rem 0.4rem;
-  border: 2px solid rgba(40, 40, 48, 0.8);
+  border: 1.8px solid rgba(40, 40, 48, 0.8);
   box-shadow: 1px 1px 4px rgba(10, 10, 14, 0.6);
   font-size: 1.1rem;
+  outline: none;
 }
 #submit {
   font-size: 1.2rem;
   color: rgb(10, 10, 14);
   padding: 0.2rem;
   margin-top: 0.5rem;
-  border: 2px solid rgba(40, 40, 48, 0.8);
+  border: 1.8px solid rgba(40, 40, 48, 0.8);
   box-shadow: 1px 1px 4px rgba(10, 10, 14, 0.6);
   text-shadow: 1px 1px 4px rgba(10, 10, 14, 0.6);
+  outline: none;
 }
 #submit:hover {
   /*background: linear-gradient(
